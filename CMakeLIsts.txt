@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(CalculatorApp)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(CalculatorApp main.cpp calculator.cpp error_handler.cpp input_handler.cpp input_processor.cpp calculator_handler.cpp help_handler.cpp)
+
+target_include_directories(CalculatorApp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
